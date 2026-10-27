@@ -172,7 +172,7 @@
   const ABAS = [{ id: 'entrada', nome: 'Entrada', icone: 'in' }, { id: 'estoque', nome: 'Estoque', icone: 'box' }, { id: 'retirada', nome: 'Retirada', icone: 'out' }];
   function shell() {
     app().innerHTML = `
-      <header class="topbar"><div class="brand"><span class="tag">Almoxarifado</span><span class="muted small">Estoque</span></div>
+      <header class="topbar"><a class="menu-btn" href="../APP-menu/" aria-label="Voltar ao menu dos apps" title="Menu dos apps"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5"/></svg><span>Menu</span></a><div class="brand"><span class="tag">Almoxarifado</span><span class="muted small">Estoque</span></div>
         <div class="spacer"></div><span class="net" id="net" hidden>Sem internet</span></header>
       <nav class="tabs" aria-label="Seções">${ABAS.map((a) => `<button data-tab="${a.id}">${ic(a.icone)}<span>${a.nome}</span></button>`).join('')}</nav>
       <main class="view" id="view" tabindex="-1"></main>`;

@@ -210,3 +210,10 @@ dialog::backdrop { background: rgba(10, 20, 15, .5); }
 .qtd-big.zero { color: var(--danger); }
 select.input:disabled { opacity: .75; }
 @media (max-width: 420px) { .prod-top { grid-template-columns: 96px 1fr; } .prod-top .ilus.img, .prod-top img.img { width: 96px; height: 96px; } .prod-top .qtd { font-size: 2rem; } }
+
+/* Botão para voltar ao menu dos apps (Apps SMA) */
+.menu-btn { display: inline-flex; align-items: center; gap: 6px; height: 38px; padding: 0 10px; margin-left: -4px; border-radius: 10px; border: 1px solid var(--line); color: var(--ink); background: var(--surface); text-decoration: none; font-weight: 700; font-size: .85rem; flex: none; }
+.menu-btn:hover { background: var(--surface-2); }
+@media (max-width: 370px) { .menu-btn span { display: none; } .menu-btn { padding: 0 9px; } }
+.menu-link { display: inline-flex; align-items: center; gap: 6px; margin-bottom: 14px; padding: 6px 2px; color: var(--muted); font-weight: 700; text-decoration: none; }
+.menu-link:hover { color: var(--ink); }
